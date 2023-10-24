@@ -1,0 +1,58 @@
+/* Breakpoint para móvil */
+@media (min-width: 320px) and (max-width: 480px) {
+    #img-banner {
+        margin-top: 5rem;
+        width: 100%;
+        height: 15rem;
+        object-fit: cover;
+    }
+
+    .tickets-container {
+        top: 20rem;
+    }
+
+    .about-site {
+        margin-top: 20rem;
+        padding: 0 2rem;
+    }
+
+    #btn-event-tickets {
+        width: 100%;
+    }
+}
+
+/* Breakpoint para tablet */
+@media (min-width: 481px) and (max-width: 935px) { 
+    #img-banner {
+        margin-top: 5rem;
+        width: 100%;
+        height: 25rem;
+        object-fit: cover;
+    }
+
+    .tickets-container {
+        top: 30rem;
+    }
+}
+
+@media (max-width: 540px) {
+    #btn-event-tickets {
+        width: 100%;
+    }
+}
+
+@media (min-width: 541px) and (max-width: 935px) {
+    .tickets-container { 
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .sel-date {
+        width: 60%;
+    }
+
+    #btn-event-tickets {
+        width: 40%;
+    }
+}
