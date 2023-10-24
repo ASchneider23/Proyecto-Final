@@ -1,0 +1,292 @@
+* {
+    padding: 0;
+    margin: 0;
+    background-color: #fff;
+}
+
+html, body {
+    overflow-x:hidden;
+    width:100%;
+}
+
+/* Header */
+header {
+    position: fixed;
+    background-color: #000;
+    width: 100%;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: space-between;
+    z-index: 3;
+}
+
+#redirect-home {
+    padding-left: 1rem;
+    width: 6rem;
+    height: 100%;
+    background-color: #000;
+}
+
+#img-logo {
+    width: 100%;
+    height: 100%;
+}
+
+button {
+    cursor: pointer;
+}
+
+#btn-login,
+#btn-logout {
+    margin-right: 1rem;
+    padding: 0.5rem;
+    color: #fff;
+    font-size: 0.8rem;
+    font-weight: 600;
+    border: none;
+    background-color: #000;
+}
+
+#btn-login:hover,
+#btn-logout:hover { 
+    box-shadow: inset 0 -2px 0 0 #fff; 
+}
+
+/* Ingresar a Cuenta */
+.modal {
+    margin: 0 auto;
+    display: none;
+    position: fixed;
+    z-index: 1;
+    right: 1rem;
+    top: 3.6rem;
+    width: 18rem;
+    height: 23rem;
+    overflow: auto;
+    background-color: #fff;
+    border: 1px solid #000;
+}
+
+.modal-container {
+    margin: 1rem auto;
+    padding: 20px;
+    width: 80%;
+    height: 80%;
+    background-color: #fff;
+}
+
+.close,
+.close-signup {
+    position: absolute;
+    top: 0.5rem;
+    right: 1rem;
+    font-size: 28px;
+    font-weight: bold;
+    color: #aaa;
+    background-color: #fff;
+}
+
+.close:hover,
+.close:focus,
+.close-signup:hover,
+.close-signup:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+    background-color: #fff;
+}
+
+#form-login {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    background-color: #fff;
+}
+
+label {
+    align-self: left;
+    margin: 1rem 0 0.2rem;
+    width: 15.5rem;
+    font-size: 1rem;
+    font-weight: 600;
+    background-color: #fff;
+}
+
+#email,
+#password,
+#username,
+#lastname,
+#new-user-email,
+#new-user-password {
+    margin-bottom: 1rem;
+    padding: 0.8rem 0 0.8rem 0.5rem; 
+    width: 15rem;
+    background-color: #fff;
+    border: 1px solid #aaa;
+}
+
+.data-labels {
+    padding-left: 0;
+}
+
+#invalid-data-alert,
+#invalid-data-alert-signup {
+    align-self: flex-start;
+    color: rgb(218, 32, 32);
+    background-color: #fff;
+}
+
+#password-info {
+    font-size: 0.8rem;
+    background-color: #fff;
+}
+
+#btn-form-login,
+#btn-create-account {
+    margin-top: 1rem;
+    padding: 0.8rem;
+    width: 15.8rem;
+    font-size: 0.8rem;
+}
+
+#btn-form-register {
+    margin-top: 1rem;
+    padding: 0.8rem;
+    width: 15.8rem;
+    font-size: 0.8rem;
+}
+
+/* Crear cuenta */
+#signup-modal {
+    position: fixed;
+    margin: 0 auto;
+    right: 1rem;
+    top: 3.6rem;
+    padding: 2rem;
+    width: 14rem;
+    height: 30rem;
+    display: flex;
+    background-color: #fff;
+    z-index: 4;
+    border: 1px solid #000;
+}
+
+#form-signup {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #fff;
+}
+
+#invalid-data-alert-signup {
+    margin-top: 2rem;
+}
+
+/* Mapa */
+/* .seating-map{
+    margin: 0 auto;
+    padding: 6rem 0 10rem 0;
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+} */
+
+.seating-map {
+    display: grid;
+    flex-direction: column;
+}
+
+#img-seating {
+    margin: 8rem auto 4rem;
+    width: 50%;
+    height: auto;
+}
+
+/* Ubicaciones */
+.aside {
+    margin: 0 auto 5rem;
+    width: 80%;
+    display: flex;
+    justify-self: flex-start;
+}
+
+h3 {
+    margin-bottom: 2rem;
+    padding-bottom: 0.5rem;
+    font-size: 1.2rem;
+    border-bottom: 1px solid #000;
+}
+
+#btn-radio-container {
+    display: flex;
+    flex-direction: row;
+}
+
+#price-container {
+    padding: 1rem 0;
+    margin-bottom: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid #aaa;
+}
+
+#tickets-container {
+    margin-top: 2rem;
+}
+
+label {
+    padding-left: 0.5rem;
+    margin: 0; 
+}
+
+h4, 
+h5 {
+    padding-left: 1.2rem;
+    font-weight: 300;
+}
+
+h4, 
+label {
+    font-size: 1.2rem;
+}
+
+h5,
+#btn-continue {
+    font-size: 1rem;
+}
+
+select, 
+#btn-continue {
+    padding: 0.5rem;
+    margin-left: 1.2rem; 
+    width: 14rem;
+}
+
+select {
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+/* Footer */
+footer {
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 3rem;
+    color: #fff;
+}
+
+footer p {
+    background-color: #000;
+}
+
