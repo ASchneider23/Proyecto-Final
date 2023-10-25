@@ -56,3 +56,20 @@
         width: 40%;
     }
 }
+
+@media (min-width: 936px) {
+    .tickets-container {
+        top: 33rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .sel-date {
+        width: 30%;
+    }
+
+    #btn-event-tickets { 
+        width: 20%;
+    }
+}
