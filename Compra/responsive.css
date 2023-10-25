@@ -1,0 +1,17 @@
+/* Breakpoint para pc */
+@media (min-width: 936px) {
+    .seating-map {
+        margin: 2rem;
+        display: flex;
+        flex-direction: row;
+    }
+
+    #img-seating {
+        width: 40%;
+    }
+
+    .aside {
+        margin-top: 5rem;
+        width: 40%;;
+    }
+}

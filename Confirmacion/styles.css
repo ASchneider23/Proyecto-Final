@@ -72,7 +72,12 @@ h3 {
     padding: 1rem;
     width: 10rem;
     font-size: 1rem;
+    font-weight: 600;
+    color: #fff;
+    border: none;
+    background-color: #000;
 }
+
 
 /* Modal */
 #redirect-modal {
@@ -80,7 +85,7 @@ h3 {
     top: 8.5rem;
     left: 18%;
     width: 65%;
-    height: 27rem;
+    height: 28rem;
     display: flex;
     flex-direction: column;
     justify-content: center;

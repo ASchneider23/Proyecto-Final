@@ -1,0 +1,85 @@
+/* Breakpoint para movil */
+@media (min-width: 320px) and (max-width: 540px) {
+    #container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #event-buttons {
+        flex-direction: column;
+    }
+
+    #btn-confirm,
+    #btn-cancel {
+        margin-top: 1rem;
+    }
+
+    #redirect-modal {
+        top: 25%;
+        width: 70%;
+        height: 32rem;
+        left: 15%;
+    }
+}
+
+/* Breakpoint para tablet */
+@media (min-width: 541px) {
+    #event-buttons {
+        justify-content: space-around;
+    }
+}
+
+@media (min-width: 541px) and (max-width: 680px) {
+    #event-info-container {
+        width: 60%;
+    }
+
+    #redirect-modal {
+        top: 25%;
+        width: 70%;
+        height: 32rem;
+        left: 15%;
+    }
+
+    h4 {
+        margin-top: 10rem;
+    }
+}
+
+@media (min-width: 681px) and (max-width: 920px) {
+    #event-info-container {
+        width: 50%;
+    }
+
+    #redirect-modal {
+        width: 60%;
+    }
+
+    h4 {
+        margin-top: 10rem;
+    }
+}
+
+@media (min-width: 921px) and (max-width: 1020px) {
+    #event-info-container {
+        width: 35%;
+    }
+
+    #redirect-modal {
+        left: 25%;
+        width: 50%;
+    }
+}
+
+/* Breakpoint para pc */
+@media (min-width: 1020px) {
+    #event-info-container {
+        width: 30%;
+    }
+
+    #redirect-modal {
+        width: 40%;
+        left: 30%;
+    }
+}
